@@ -48,7 +48,10 @@ a {
 
 /* Start Header */
 header {
-
+	position: absolute;
+	left: 0;
+	width: 100%;
+	z-index: 3;
 }
 header .container {
 	display: flex;
@@ -56,7 +59,7 @@ header .container {
 	align-items: center;
 	position: relative;
 	padding-top: 20px;
-	padding-bottom: 1px;
+	min-height: 96px;
 }
 header .container::after {
 	content: "";
@@ -78,18 +81,73 @@ header nav {
 header nav ul {
 	display: flex;
 }
+@media (max-width: 991px) {
+	header nav ul {
+		display: none;
+	}
+	header .container nav .menu-bar:hover + ul {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		top: 100%;
+		left: 15px;
+		width: calc(100% - 30px);
+		text-align: center;
+	}
+	header .container nav ul a {
+		padding-left: 30px;
+		padding-bottom: 15px;
+		padding-top: 15px;
+	}
+}
 header nav ul li a {
 	display: block;
 	font-size: var(--pFontSize);
 	text-transform: uppercase;
 	font-weight: 600;
-	transition: .3s;
+	transition-duration: .3s;
+	transition-property: color;
 	padding: 30px 25px;
+	position: relative;
+	z-index: 1;
 }
 header nav ul li .active,
 header nav ul li a:hover {
 	color: var(--mainColor);
 	border-bottom: 1px solid var(--mainColor);
+}
+header .search {
+	width: 30px;
+    height: 30px;
+    border-left: 1px solid white;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-left: 40px;
+	padding-left: 50px;
+}
+header .search i {
+	cursor: pointer;
+	transition: .3s;
+	color: #fff;
+	font-size: 20px;
+}
+header .search i:hover {
+	color: var(--mainColor);
+}
+header .container nav .menu-bar {
+	color: #fff;
+	font-size: 20px;
+	transition: .3s;
+	cursor: pointer;
+}
+header .container nav .menu-bar:hover {
+	color: var(--mainColor);
+}
+@media (min-width: 992px) {
+	header .container nav .menu-bar {
+		display: none;
+	}
 }
 /* End Header */
 

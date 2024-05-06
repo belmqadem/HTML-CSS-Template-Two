@@ -1,0 +1,136 @@
+/* Start Global rules */
+:root {
+	--mainColor: #00c7fc;
+	--bgColor: rgba(15, 166, 143, 6%);
+	--pFontSize: 13px;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: "Open Sans", sans-serif;
+	background-color: #1f2021;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+.container {
+	padding: 0 15px;
+	margin: 0 auto;
+}
+@media (min-width: 768px) {
+	.container {
+		width: 750px;
+	}
+}
+@media (min-width: 992px) {
+	.container {
+		width: 970px;
+	}
+}
+@media (min-width: 1200px) {
+	.container {
+		width: 1170px;
+	}
+}
+/* End Global rules */
+
+/* Start Header */
+header {
+
+}
+header .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	padding-top: 20px;
+	padding-bottom: 1px;
+}
+header .container::after {
+	content: "";
+	position: absolute;
+	width: calc(100% - 30px);
+	height: 1px;
+	background-color: #636364;
+	bottom: 0;
+}
+header img {
+	width: 150px;
+}
+header nav {
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+header nav ul {
+	display: flex;
+}
+header nav ul li a {
+	display: block;
+	font-size: var(--pFontSize);
+	text-transform: uppercase;
+	font-weight: 600;
+	transition: .3s;
+	padding: 30px 25px;
+}
+header nav ul li .active,
+header nav ul li a:hover {
+	color: var(--mainColor);
+	border-bottom: 1px solid var(--mainColor);
+}
+/* End Header */
+
+/* Start Home */
+.home {
+
+}
+/* End Home */
+
+/* Start Services */
+.services {
+
+}
+/* End Services */
+
+/* Start Portfolio */
+.portfolio {
+
+}
+/* End Portfolio */
+
+/* Start About */
+.about {
+
+}
+/* End About */
+
+/* Start Pricing */
+.pricing {
+
+}
+/* End Pricing */
+
+/* Start Contact */
+.contact {
+
+}
+/* End Contact */
+
+/* Start Footer */
+footer {
+
+}
+/* End Footer */

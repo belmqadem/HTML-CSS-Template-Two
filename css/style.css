@@ -45,6 +45,48 @@ a {
 		width: 1170px;
 	}
 }
+.special-heading h2 {
+	text-transform: uppercase;
+	width: fit-content;
+	letter-spacing: 1.2px;
+	font-size: 30px;
+	font-weight: 400;
+	text-align: center;
+	position: relative;
+	margin: 0 auto 50px;
+}
+.special-heading h2::before {
+	content: "";
+	position: absolute;
+	bottom: -20px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 80%;
+	height: 1px;
+	background-color: #000;
+}
+.special-heading h2::after {
+	content: "";
+	position: absolute;
+	bottom: -25px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	border: 1px solid black;
+	background-color: #fff;
+}
+.special-heading p {
+	font-size: 13px;
+    font-weight: 300;
+    text-align: center;
+	width: 500px;
+	max-width: 100%;
+	margin: 0 auto 80px;
+	line-height: 2;
+	color: #a8a8a8;
+}
 /* End Global rules */
 
 /* Start Header */
@@ -91,9 +133,11 @@ header nav ul {
 		flex-direction: column;
 		position: absolute;
 		top: 100%;
-		left: 15px;
-		width: calc(100% - 30px);
+		left: 0;
+		width: 100%;
 		text-align: center;
+		background-color: rgb(0 0 0 / 82%);
+		height: calc(100vh - 96px);
 	}
 	header .container nav ul a {
 		padding-left: 30px;
@@ -167,9 +211,23 @@ header .container nav .menu-bar:hover {
 	width: 60%;
 	display: flex;
 	justify-content: flex-end;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
 }
 .home .main-text .content {
 	max-width: 500px;
+}
+@media (max-width: 767px) {
+	.home .main-text {
+		width: 100%;
+		padding: 30px 60px;
+		text-align: center;
+	}
+	.home .main-text .content {
+		max-width: 100%;
+	}
 }
 .home .main-text .content h2 {
 	font-size: 30px;
@@ -198,9 +256,10 @@ header .container nav .menu-bar:hover {
 /* End Home */
 
 /* Start Services */
-/* .services {
-
-} */
+.services {
+	background-color: #fff;
+	padding: 80px;
+}
 /* End Services */
 
 /* Start Portfolio */

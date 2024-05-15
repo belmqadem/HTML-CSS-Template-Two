@@ -300,10 +300,32 @@ header .container nav .menu-bar:hover {
 }
 /* End Services */
 
+/* Start Designs */
+.design {
+	padding: var(--mainPadding);
+	height: 500px;
+	display: flex;
+	align-items: center;
+}
+.design .phone-img {
+	flex: 1;
+}
+.design .content {
+	color: #fff;
+	font-size: 16px;
+	line-height: 2;
+	flex: 1;
+}
+.design .content h3 {
+	font-size: 20px;
+	padding-bottom: 30px;
+}
+/* End Designs */
+
 /* Start Portfolio */
-/* .portfolio {
-	
-} */
+.portfolio {
+	background-color: #fff;	
+}
 /* End Portfolio */
 
 /* Start About */

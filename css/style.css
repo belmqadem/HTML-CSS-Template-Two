@@ -300,31 +300,34 @@ header .container nav .menu-bar:hover {
 }
 /* End Services */
 
-/* Start Designs */
+/* Start Design */
 .design {
+	background-color: var(--bgColor);
 	padding: var(--mainPadding);
-	height: 500px;
+}
+.design .container {
 	display: flex;
+	justify-content: center;
 	align-items: center;
 }
-.design .phone-img {
-	flex: 1;
-}
 .design .content {
-	color: #fff;
-	font-size: 16px;
+	background-color: var(--transparentColor);
+	text-align: center;
+	color: white;
+	padding: 50px;
 	line-height: 2;
-	flex: 1;
 }
 .design .content h3 {
 	font-size: 20px;
-	padding-bottom: 30px;
+	font-weight: 400;
+	padding-bottom: 40px;
 }
-/* End Designs */
+/* End Design */
 
 /* Start Portfolio */
 .portfolio {
-	background-color: #fff;	
+	background-color: #fff;
+	padding: var(--mainPadding);
 }
 /* End Portfolio */
 

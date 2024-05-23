@@ -312,6 +312,8 @@ header .container nav .menu-bar:hover {
 }
 .design .content {
 	background-color: var(--transparentColor);
+	min-width: 600px;
+	max-width: fit-content;
 	text-align: center;
 	color: white;
 	padding: 50px;
@@ -322,12 +324,57 @@ header .container nav .menu-bar:hover {
 	font-weight: 400;
 	padding-bottom: 40px;
 }
+.design .content ul li {
+	transition: 0.3s;
+}
+.design .content ul li:hover {
+	color: var(--mainColor);
+	font-weight: 600;
+}
 /* End Design */
 
 /* Start Portfolio */
 .portfolio {
 	background-color: #fff;
 	padding: var(--mainPadding);
+}
+.portfolio .container .shuffle {
+	max-width: 600px;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+.portfolio .container .shuffle .active {
+	background-color: var(--mainColor);
+	color: #fff;
+	padding: 8px 20px;
+	transform: translateY(-8px);
+}
+.portfolio .gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 60px;
+}
+.portfolio .gallery .box {
+	flex-basis: 25%;
+}
+@media (max-width: 991px) {
+	.portfolio .gallery .box {
+		flex-basis: 50%;
+	}
+}
+@media (max-width: 767px) {
+	.portfolio .gallery .box {
+		flex-basis: 100%;
+	}
+}
+.portfolio .gallery .box img {
+	max-width: 100%;
+}
+.portfolio .gallery .box .caption {
+	padding: 10px;
+	text-align: center;
 }
 /* End Portfolio */
 

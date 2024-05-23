@@ -370,13 +370,30 @@ header .container nav .menu-bar:hover {
 	}
 }
 .portfolio .gallery .box img {
-	max-width: 100%;
+	height: 280px;
+    width: 100%;
 }
 .portfolio .gallery .box .caption {
 	padding: 10px;
 	text-align: center;
+	line-height: 2;
+}
+.portfolio .gallery .box .caption p {
+	color: var(--mainColor);
 }
 /* End Portfolio */
+
+/* Start video */
+.video {
+	background-color: var(--bgColor);
+	padding: var(--mainPadding);
+	color: #fff;
+}
+.video .content {
+	background-color: var(--transparentColor);
+	padding: 60px 0;
+}
+/* End video */
 
 /* Start About */
 /* .about {

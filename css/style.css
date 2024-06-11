@@ -552,6 +552,121 @@ header .container nav .menu-bar:hover {
 	background-color: #fff;
 	padding: var(--mainPadding);
 }
+.pricing a {
+	color: #000;
+}
+.pricing .pricing-content {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	margin-bottom: 40px;
+}
+@media (max-width: 767px) {
+	.pricing .pricing-content {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+.pricing .pricing-content .plan {
+	width: 200px;
+	display: flex;
+	flex-direction: column;
+}
+@media (max-width: 767px) {
+	.pricing .pricing-content .plan {
+		width: 80%;
+	}
+}
+.pricing .pricing-content .plan .head {
+	border-top: 1px solid var(--mainColor);
+	border-bottom: 1px solid var(--mainColor);
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+@media (max-width: 767px) {
+	.pricing .pricing-content .plan .head {
+		background-color: var(--transparentColor);
+		border: none;
+		color: #fff;
+	}
+}
+.pricing .pricing-content .plan .head h4 {
+	font-size: 16px;
+	font-weight: 400;
+	padding-bottom: 15px;
+}
+.pricing .pricing-content .plan .head span {
+	font-size: 60px;
+	font-weight: bold;
+	position: relative;
+}
+.pricing .pricing-content .plan .head span::before {
+	content: "$";
+	position: absolute;
+	top: 15px;
+	left: -25px;
+	font-size: 22px;
+}
+.pricing .pricing-content .plan .head span::after {
+	content: "/MO";
+	position: absolute;
+	bottom: 15px;
+	right: -35px;
+	font-size: 13px;
+}
+.pricing .pricing-content .plan ul {
+	border-bottom: 1px solid var(--mainColor);
+	display: flex;
+	flex-direction: column;
+}
+.pricing .pricing-content .plan ul li {
+	padding: 30px 0;
+	width: 130px;
+	align-self: center;
+}
+@media (max-width: 767px) {
+	.pricing .pricing-content .plan ul li {
+		width: 80%;
+	}
+}
+.pricing .pricing-content .plan ul li:not(:last-of-type) {
+	border-bottom: 1px solid var(--mainColor);
+}
+.pricing .pricing-content .plan .buy {
+	margin-top: 30px;
+	border: 1px solid var(--mainColor);
+	align-self: center;
+	padding: 10px 30px;
+	transition-duration: 0.4s;
+	transition-timing-function: ease-in-out;
+}
+@media (max-width: 767px) {
+	.pricing .pricing-content .plan .buy {
+		margin-bottom: 60px;
+	}
+}
+.pricing .pricing-content .plan .buy:hover {
+	background-color: var(--mainColor);
+	cursor: pointer;
+}
+.pricing .pricing-content .plan .buy:hover a {
+	color: #fff;
+	font-weight: 600;
+}
+.pricing .contact {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+}
+.pricing .contact p {
+	font-size: 20px;
+	margin-bottom: 50px;
+}
+.pricing .contact a {
+	background-color: var(--mainColor);
+	color: #fff;
+	padding: 10px 30px;
+}
 /* End Pricing */
 
 /* Start Contact */

@@ -669,6 +669,77 @@ header .container nav .menu-bar:hover {
 }
 /* End Pricing */
 
+/* Start Mail-Box */
+.mail-box {
+	padding: var(--mainPadding);
+	color: #fff;
+}
+.mail-box .container {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+@media (max-width: 991px) {
+	.mail-box .container {
+		flex-direction: column;
+	}
+}
+.mail-box .container form {
+	display: flex;
+	align-items: center;
+	width: 600px;
+	max-width: 100%;
+	position: relative;
+}
+.mail-box .container form i {
+	position: absolute;
+	left: 15px;
+	font-size: 20px;
+}
+.mail-box .container input[type="email"] {
+	border: 1px solid #fff;
+	background: none;
+	padding: 20px 10px 20px 50px;
+	color: #fff;
+	caret-color: var(--mainColor);
+	width: calc(100% - 130px);
+}
+.mail-box .container input[type="email"]:focus {
+	outline: none;
+}
+.mail-box .container input[type="submit"] {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border: 1px solid #fff;
+	border-left: none;
+	background-color: var(--mainColor);
+	color: #fff;
+	width: 130px;
+	transition: .3s;
+}
+.mail-box .container input[type="submit"]:hover {
+	background-color: #007fa3;
+}
+.mail-box form ::placeholder {
+	color: #fff;
+	font-size: 13px;
+}
+.mail-box .container p {
+	font-size: 13px;
+	line-height: 1.5;
+	margin-left: 30px;
+}
+@media (max-width: 991px) {
+	.mail-box .container p {
+		margin-top: 30px;
+		margin-left: 10px;
+		margin-right: 10px;
+		text-align: center;
+	}
+}
+/* End Mail-Box */
+
+
 /* Start Contact */
 /* .contact {
 

@@ -651,7 +651,6 @@ header .container nav .menu-bar:hover {
 }
 .pricing .pricing-content .plan .buy:hover a {
 	color: #fff;
-	font-weight: 600;
 }
 .pricing .contact {
 	padding-top: 30px;
@@ -739,15 +738,83 @@ header .container nav .menu-bar:hover {
 }
 /* End Mail-Box */
 
-
 /* Start Contact */
-/* .contact {
-
-} */
+.contact {
+	background-color: #fff;
+	padding: var(--mainPadding);
+}
+.contact .form-cont {
+	display: flex;
+}
+@media (max-width: 991px) {
+	.contact .form-cont {
+		flex-direction: column;
+	}
+}
+.contact .form-cont form {
+	display: flex;
+	flex-direction: column;
+	width: 800px;
+	max-width: 100%;
+	margin-right: 40px;
+}
+@media (max-width: 991px) {
+	.contact .form-cont form {
+		margin-bottom: 40px;
+		margin-right: 0;
+	}
+}
+.contact .form-cont form input {
+	margin-bottom: 20px;
+	padding: 25px 20px;
+}
+.contact .form-cont form textarea {
+	padding: 25px 20px;
+	resize: vertical;
+}
+.contact .form-cont form input:focus,
+.contact .form-cont form textarea:focus {
+	border: 1px solid var(--mainColor);
+	outline: 1px solid var(--mainColor);
+}
+.contact .get-in-touch h3 {
+	font-size: 13px;
+	margin-bottom: 25px;
+}
+.contact .get-in-touch h3:last-of-type {
+	margin-top: 50px;
+}
+.contact .get-in-touch p {
+	font-size: 13px;
+	color: #a8a8a8;
+	line-height: 2;
+}
+@media (max-width: 991px) {
+	.contact .get-in-touch {
+		text-align: center;
+	}
+}
+.contact .container button {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top: 60px;
+	padding: 20px 30px;
+	background-color: var(--mainColor);
+	border: none;
+	color: #fff;
+	transition: .3s;
+	font-weight: 600;
+	font-size: 13px;
+	letter-spacing: 1.3px;
+}
+.contact .container button:hover {
+	background-color: #007fa3;
+}
 /* End Contact */
 
 /* Start Footer */
-/* footer {
-
-} */
+footer {
+	padding: var(--mainPadding);
+}
 /* End Footer */
